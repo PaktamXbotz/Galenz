@@ -78,11 +78,6 @@
                     console.log('Audio playback failed:', error);
                 });
             }
-            document.removeEventListener('click', playAudio);
-            document.removeEventListener('touchstart', playAudio);
-            document.removeEventListener('touchend', playAudio);
-            document.removeEventListener('touchmove', playAudio);
-        }
 
         document.addEventListener('click', playAudio);
         document.addEventListener('touchstart', playAudio);
